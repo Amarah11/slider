@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Слайдер</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Слайдер с кнопками и индикаторами</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="slider">
@@ -13,7 +13,14 @@
             <div class="slide">Слайд 2</div>
             <div class="slide">Слайд 3</div>
         </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-    <script src="main.js"></script>
+    <div class="indicators">
+        <span class="dot active" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Слайдер с кнопками и индикаторами</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="slider">
-        <div class="slides">
-            <div class="slide active">Слайд 1</div>
-            <div class="slide">Слайд 2</div>
-            <div class="slide">Слайд 3</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="carousel">
+        <div id="content">
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
+          <img class="item" src="./macan.png" />
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <button id="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
     </div>
-    <div class="indicators">
-        <span class="dot active" onclick="showSlide(0)"></span>
-        <span class="dot" onclick="showSlide(1)"></span>
-        <span class="dot" onclick="showSlide(2)"></span>
-    </div>
-    <script src="script.js"></script>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
+
